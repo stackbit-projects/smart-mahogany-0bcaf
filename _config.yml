@@ -1,0 +1,40 @@
+title: Cookie
+description: >
+  Write an awesome description for your new site here. You can edit this line in
+  _config.yml. It will appear in your document head meta (for Google search
+  results) and in your feed.xml site description.
+permalink: '/blog/:title/'
+plugins:
+  - jekyll-feed
+  - jekyll-postcss
+  - jekyll-seo-tag
+  - jekyll-purgecss
+  - jekyll-minifier
+css_dir: assets/css
+highlighter: rouge
+collections:
+  posts:
+    output: true
+    permalink: '/blog/:title'
+  pages:
+    output: true
+    permalink: '/:title'
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
+soopr:
+  publish_token: ''
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - postcss.config.js
+  - purgecss.config.js
+  - tailwind.config.js
+  - .gitignore
+  - vendor
+baseurl: ''
+url: ''
